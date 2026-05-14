@@ -792,6 +792,34 @@ body {
 }
 
 /* ============================================================
+   Error Screen
+   ============================================================ */
+.error-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--bg-base);
+}
+
+.error-screen__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-error);
+  margin-bottom: 12px;
+}
+
+.error-screen__message {
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* ============================================================
    Reduced Motion
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
