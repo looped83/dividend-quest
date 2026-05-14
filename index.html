@@ -8,10 +8,28 @@
       content="Dividend Quest – Verwandle vermiedene Käufe in Dividendenkapital"
     />
     <title>Dividend Quest</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #0f172a;
+        color: #f8fafc;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      #loading {
+        text-align: center;
+        opacity: 0.6;
+        font-size: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="loading">Dividend Quest lädt…</div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
